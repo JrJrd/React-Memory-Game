@@ -1,7 +1,6 @@
 // Prompt.jsx
 
 import React, { Component } from "react";
-import Game from "./Game";
 
 class Prompt extends Component {
   render() {
@@ -10,10 +9,10 @@ class Prompt extends Component {
       <div>
         <p>Have you seen this letter yet?</p>
         <div className="d-felx justify-content-around align-items-center">
-          <button onClick={(e) => handleAnswer(e, index, item.displayed)}>
+          <button onClick={(e) => handleAnswer(e, item, index, true)}>
             Yes
           </button>
-          <button onClick={(e) => handleAnswer(e, index, !item.displayed)}>
+          <button onClick={(e) => handleAnswer(e, item, index, false)}>
             No
           </button>
         </div>

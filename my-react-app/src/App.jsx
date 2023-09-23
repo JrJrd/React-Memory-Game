@@ -10,7 +10,6 @@ class App extends Component {
     super();
 
     this.state = {
-      items: [],
       currentScore: 0,
       bestScore: 0,
     };
